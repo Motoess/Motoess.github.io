@@ -10,7 +10,7 @@
 // Leave it blank to use text instead
 // (Put the files in the images folder)
 // (You can also use external URL)
-var l_serverImage = "https://media.discordapp.net/attachments/595016784420012034/1022437709446397962/oh_yeah.png";
+var l_serverImage = "";
 
 // Center logo?
 // 'true' or 'false'
@@ -27,7 +27,7 @@ var l_serverName = "";
 // Use a video for the background?
 // Otherwise it will use images
 // 'true' or 'false'
-var l_bgVideo = true;
+var l_bgVideo = false;
 
 // Default available videos:
 // "aurora.webm"
@@ -72,7 +72,9 @@ var l_bgImageMapBased = false;
 // (Place the files in the backgrounds/images folder)
 // (You can also use external URL)
 var l_bgImages = [
-	"https://imgur.com/IxF2Wtm.jpg"
+	"https://imgur.com/EQQAvzh.jpg",
+	"https://imgur.com/6oLlHmy.jpg",
+	"https://imgur.com/1KOYOpy.jpg"
 
 ];
 
@@ -112,7 +114,8 @@ var l_musicDisplay = true;
 // (Place the ogg files in the music folder)
 // (You can also use external URL for the ogg files)
 var l_musicPlaylist = [
-	{youtube: "https://www.youtube.com/watch?v=7E9htyTVgYo", name: "sex boobli shoob"},
+	{youtube: "https://www.youtube.com/watch?v=4u4Hfak3EIk", name: "El Cargo Part 1"},
+	{youtube: "https://www.youtube.com/watch?v=3vUmQmMoA3c", name: "El Cargo Part 2"},
 ];
 
 // Random music order?
