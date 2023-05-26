@@ -72,9 +72,9 @@ var l_bgImageMapBased = false;
 // (Place the files in the backgrounds/images folder)
 // (You can also use external URL)
 var l_bgImages = [
-	"https://imgur.com/EQQAvzh.jpg",
-	"https://imgur.com/6oLlHmy.jpg",
-	"https://imgur.com/1KOYOpy.jpg"
+	"https://imgur.com/FrPB7BL.jpg",
+	"https://imgur.com/po08Xqc.jpg",
+	"https://imgur.com/4fC68fr.jpg"
 
 ];
 
@@ -132,7 +132,7 @@ var l_messagesEnabled = false;
 
 // Enter your custom messages below
 var l_messages = [
-	"sex",
+
 ];
 
 // Random message order?
