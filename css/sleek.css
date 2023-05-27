@@ -262,14 +262,14 @@ video {
 	}
   
 	&::before {
-	  left: 1.4em;
-	  animation: leftEye var(--anim-duration) infinite;
-	}
-  
-	&::after {
-	  right: 1.4em;
-	  animation: rightEye var(--anim-duration) infinite;
-	}
+		left: 0.1em;
+		animation: leftEye var(--anim-duration) infinite;
+	  }
+	
+	  &::after {
+		right: 0.1em;
+		animation: rightEye var(--anim-duration) infinite;
+	  }
   }
   
   .phrase-output {
