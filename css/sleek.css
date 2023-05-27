@@ -269,7 +269,7 @@ video {
 	  height: 5.4em;
 	  border-radius: 50%;
 	  border: 0.01em dashed rgba(255, 255, 255, 0.05);
-	  z-index: -1;
+	  
 	  animation: spin 20s linear infinite;
 	}
   }
