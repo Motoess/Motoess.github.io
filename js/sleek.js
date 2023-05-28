@@ -341,11 +341,11 @@ function getYoutubeIdFromUrl(url) {
 
 const phraseOutput = document.querySelector(".phrase-output");
 const phrases = [
-  "please remain calm",
-  "take it to make it",
-  "yellow means yield",
-  "obey posted limits",
-  "no public access"
+  ">> please remain calm <<",
+  ">> take it to make it <<",
+  ">> yellow means yield <<",
+  ">> obey posted limits <<",
+  ">> no public access <<"
 ];
 const animationDuration =
   parseInt(
