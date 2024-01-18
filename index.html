@@ -3,34 +3,33 @@
 <head>
 	<meta charset="utf-8">
 	<title>sleekLoad 2</title>
+	<!-- CSS vh vw fallback -->
+	<!-- Disable css cache -->
+	<script type="text/javascript">
+		document.write('<link rel="stylesheet" href="css/sleek.css?'+Math.random()+'">');
+	</script>
 	<!-- Enable css cache -->
 	<!-- <link rel="stylesheet" href="css/sleek.css"> -->
 </head>
 <body>
 	<div id="player"></div>
+	<div class="face-bg">
+		<div class="face"></div>
+	</div>
 
 	<div id="overlay"></div>
-	<div id="header">
-		<div class="face-bg">
-			<div class="face"></div>
-		  </div>
-		  <h1 class="phrase-output">please remain calm</h1>
-		<!--<div id="title"></div>-->
-		<!--<div id="subtitle">
-			We are currently playing  <span id="gamemode"></span> at <span id="map"></span>
-		</div>-->
-	</div>
 	<div id="status-container">
+
 		<div id="status">Retrieving server info...</div>
 		<div id="loading">
 			<div id="loading-progress"></div>
 		</div>
-		<div id="messages"></div>
+		<h1 class="phrase-output">please remain calm</h1>
 	</div>
 	<div id="music">
 		You are now listening to:<div id="music-name"></div>
 	</div>
-	<div id="enable-audio">Click here to enable music preview</div>
+	<!--<div id="enable-audio">Click here to enable music preview</div>-->
 	<div id="error-box"></div>
 	<div id="warn">
 			<h1>Oops! Something went wrong!</h1>
