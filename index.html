@@ -1,52 +1,82 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>sleekLoad 2</title>
-	<!-- CSS vh vw fallback -->
-	<!-- Disable css cache -->
-	<script type="text/javascript">
-		document.write('<link rel="stylesheet" href="css/sleek.css?'+Math.random()+'">');
-	</script>
-	<!-- Enable css cache -->
-	<!-- <link rel="stylesheet" href="css/sleek.css"> -->
-</head>
-<body>
-	<div id="player"></div>
-	<div class="face-bg">
-		<div class="face"></div>
-	</div>
+<html lang="en">
 
-	<div id="overlay"></div>
-	<div id="status-container">
+  <head>
 
-		<div id="status">Retrieving server info...</div>
-		<div id="loading">
-			<div id="loading-progress"></div>
-		</div>
-		<h1 class="phrase-output">please remain calm</h1>
-	</div>
-	<div id="music">
-		You are now listening to:<div id="music-name"></div>
-	</div>
-	<!--<div id="enable-audio">Click here to enable music preview</div>-->
-	<div id="error-box"></div>
-	<div id="warn">
-			<h1>Oops! Something went wrong!</h1>
-			<p>Looks like the config file is broken.</p>
-			<p>Probably it is just a missing/misplaced comma, quote or bracket.</p>
-			<p>Check the browser console for further details.</p>
-		</div>
-	<script src="js/lib/jquery-2.1.1.min.js"></script>
-	<script src="js/lib/jquery.backstretch.min.js"></script>
-	<!-- Disable javascript cache -->
-	<script type="text/javascript">
-		document.write('<script src="js/config.js?'+Math.random()+'"><\/script>');
-		document.write('<script src="js/check.js?'+Math.random()+'"><\/script>');
-		document.write('<script src="js/sleek.js?'+Math.random()+'"><\/script>');
-	</script>
-	<!-- Enable javascript cache -->
-	<!-- <script src="js/config.js"></script> -->
-	<!-- <script src="js/sleek.js"></script> -->
-</body>
+    <!-- Project Styles -->
+    <link rel="stylesheet" type="text/css" href="src/Halo3LoadingScreen.css">
+    <script type="text/javascript">
+      document.write('<link rel="stylesheet" href="src/sleek.css?'+Math.random()+'">');
+    </script>
+    <!-- Page Metadata -->
+    <title>[Project Zenin] Loading Screen</title>
+    </head>
+
+  <body onload="main()">
+
+    <!-- Loading Content -->
+    <div id="loading">
+      <!--<img id="halo_3_logo" src="res/Halo 3 Logo.png" alt="Halo 3 Logo" >-->
+      <div class="face-bg">
+        <div class="face"></div>
+      </div>
+    </div>
+
+    <!-- Canvas -->
+    <canvas id="canvas"></canvas>
+
+  
+    <div id="status-container">
+
+      <div id="status">Retrieving server info...</div>
+      <div id="loading-gmod">
+        <div id="loading-progress"></div>
+      </div>
+      <h1 class="phrase-output">please remain calm</h1>
+    </div>
+
+    <!-- UMSL Provided Library Scripts -->
+    <script src="lib/umsl/three.min.js"></script>
+    <script src="lib/umsl/dat.gui.min.js"></script>
+    <script src="lib/umsl/webgl-utils.js"></script>
+    <script src="lib/umsl/webgl-debug.js"></script>
+    <script src="lib/umsl/cuon-utils.js"></script>
+    <script src="lib/umsl/cuon-matrix.js"></script>
+
+    <!-- Decimal.js Script -->
+    <script src="lib/decimal.js"></script>
+
+    <!-- Better Random Script -->
+    <script src="lib/mersenne-twister.js"></script>
+
+    <!-- Rotator Class -->
+    <script src="src/math/Rotator.js"></script>
+
+    <!-- Interpolator Class -->
+    <script src="src/math/Interpolator.js"></script>
+
+    <!-- Particle Classes -->
+    <script src="src/model/LoadingParticle.js"></script>
+    <script src="src/model/LoadingParticleFactory.js"></script>
+
+    <!-- Image Loader Class -->
+    <script src="src/image/ImageLoader.js"></script>
+
+    <!-- Background Grid Class -->
+    <script src="src/model/BackgroundGrid.js"></script>
+
+    <!-- Root Project Script -->
+    <script src="src/Halo3LoadingScreen.js"></script>
+
+    <!-- Root Project Script -->
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <!-- Root Project Script -->
+    <script src="lib/sleek.js"></script>
+    <!-- Root Project Script -->
+    <script src="lib/vunit-0.2.0.min.js"></script>
+    <!-- Root Project Script -->
+    <script src="lib/jquery.backstretch.min.js"></script>
+
+  </body>
+
 </html>
